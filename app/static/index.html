@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Content Panel</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>✨ AI Content Panel</h1>
+      <p>Посты, заголовки, идеи и картинки — одним запросом</p>
+    </header>
+
+    <div class="modes">
+      <button class="mode active" data-mode="post">✍️ Пост</button>
+      <button class="mode" data-mode="title">🏷️ Заголовки</button>
+      <button class="mode" data-mode="idea">💡 Идеи</button>
+      <button class="mode" data-mode="image">🖼️ Картинка</button>
+    </div>
+
+    <div class="chat" id="chat"></div>
+
+    <div class="input-bar">
+      <textarea id="msg" rows="2" placeholder="Тема поста, например: запуск онлайн-курса по нейросетям…"></textarea>
+      <button id="send" title="Отправить">➤</button>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
